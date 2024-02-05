@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: radial-gradient(circle at center, #ffd700, #1a1a1a 88%);
+    /* Degradado radial desde el centro (amarillo dorado) hacia afuera (tu color actual) */
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 2rem;
+}
+
+#turnIndicator {
+    font-size: 1.5em;
+    margin-bottom: 3rem;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    margin: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    /* Negro mate */
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 14px;
+    transition: transform 0.3s ease;
+    /* Agregamos una transición suave a la propiedad transform */
+}
+
+.cell:hover {
+    background-color: #333;
+    /* Cambia a un tono más oscuro al pasar el ratón */
+    transform: scale(1.1);
+    /* Escalamos el tamaño al hacer hover */
+}
+
+button {
+    padding: 10px 18px;
+    font-size: 1em;
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: transform 0.3s ease;
+    /* Agregamos una transición suave a la propiedad transform */
+}
+
+button:hover {
+    background-color: #404040;
+    transform: scale(1.1);
+    /* Escalamos el tamaño al hacer hover */
+}
+
+
+/* Otros estilos existentes ... */
+
+.swal2-confirm.custom-confirm-button {
+    background-color: #000;
+    /* Cambia el color del fondo del botón a tu elección */
+    color: white;
+    /* Cambia el color del texto del botón */
+    border: none;
+    /* Elimina el borde del botón si lo deseas */
+    /* Otros estilos que desees aplicar al botón */
+}
